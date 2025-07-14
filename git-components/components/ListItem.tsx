@@ -23,15 +23,7 @@ export default function ListItem({
           <span className="text-black text-xl">{index}</span>
           <div className="w-[1.5em] h-[1.5em">
             {rankingUp === true ? (
-              <IoIosArrowUp
-                className={`text-2xl ${
-                  rankingUp
-                    ? "text-green-500"
-                    : rankingUp === null
-                    ? "hidden"
-                    : "text-red-500"
-                }`}
-              />
+              <IoIosArrowUp className="text-red-500 text-2xl" />
             ) : rankingUp === false ? (
               <IoIosArrowDown className="text-red-500 text-2xl" />
             ) : null}
